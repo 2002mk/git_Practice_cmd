@@ -75,3 +75,18 @@ Writing objects: 100% (2/2), 271 bytes | 271.00 KiB/s, done.
 Total 2 (delta 0), reused 0 (delta 0), pack-reused 0
 To https://github.com/2002mk/git_Practice_cmd.git
    0d9c58a..3961c73  main -> main
+   E:\Desktop\git_cmd\git_Practice_cmd>git add cmd.txt   
+
+E:\Desktop\git_cmd\git_Practice_cmd>git commit -m "added few more commandes"
+[main 02fabbf] added few more commandes
+ 1 file changed, 77 insertions(+)
+
+E:\Desktop\git_cmd\git_Practice_cmd>git push origin main  
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 1.08 KiB | 1.08 MiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/2002mk/git_Practice_cmd.git
+   3961c73..02fabbf  main -> main
