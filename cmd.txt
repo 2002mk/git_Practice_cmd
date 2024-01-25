@@ -90,3 +90,75 @@ Writing objects: 100% (3/3), 1.08 KiB | 1.08 MiB/s, done.
 Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
 To https://github.com/2002mk/git_Practice_cmd.git
    3961c73..02fabbf  main -> main
+   Microsoft Windows [Version 10.0.22631.3085]
+(c) Microsoft Corporation. All rights reserved.
+
+E:\Desktop\git_cmd>git add .
+fatal: not a git repository (or any of the parent directories): .git
+
+E:\Desktop\git_cmd>cd git_Practice_cmd
+
+E:\Desktop\git_cmd\git_Practice_cmd>git add .
+
+E:\Desktop\git_cmd\git_Practice_cmd>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   cmd.txt
+
+
+E:\Desktop\git_cmd\git_Practice_cmd>git commit -m "add the next git cmd "
+[main 12dbd39] add the next git cmd
+ 1 file changed, 16 insertions(+), 1 deletion(-)
+
+E:\Desktop\git_cmd\git_Practice_cmd>git add .
+
+E:\Desktop\git_cmd\git_Practice_cmd>git commit -m "created new file"
+[main 239406c] created new file
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 test3.txt
+
+E:\Desktop\git_cmd\git_Practice_cmd>git push origin main
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 681 bytes | 681.00 KiB/s, done.
+Total 5 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 1 local object.
+To https://github.com/2002mk/git_Practice_cmd.git
+   02fabbf..239406c  main -> main
+
+E:\Desktop\git_cmd\git_Practice_cmd>git add .
+
+E:\Desktop\git_cmd\git_Practice_cmd>git commit -m "deleted a file to check the verification"
+[main c709f6b] deleted a file to check the verification
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ delete mode 100644 test3.txt
+
+E:\Desktop\git_cmd\git_Practice_cmd>git push origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 238 bytes | 238.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/2002mk/git_Practice_cmd.git
+   239406c..c709f6b  main -> main
+
+E:\Desktop\git_cmd\git_Practice_cmd>git pull
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 1010 bytes | 112.00 KiB/s, done.
+From https://github.com/2002mk/git_Practice_cmd
+   c709f6b..6ee351f  main       -> origin/main
+Updating c709f6b..6ee351f
+Fast-forward
+ dummy.txt | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 dummy.txt
